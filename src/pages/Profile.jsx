@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useMutation } from "@tanstack/react-query";
-import { Profile, auth, uploadImage } from "@/api/supabaseClient";
+import { Profile as ProfileAPI, auth, uploadImage } from "@/api/supabaseClient";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
@@ -64,7 +64,7 @@ export default function Profile() {
 
   const updateMutation = useMutation({
     mutationFn: async (data) => {
-      await Profile.update(userData.id, data);
+      await ProfileAPI.update(userData.id, data);
       const updatedUser = await auth.me();
       return updatedUser;
     },

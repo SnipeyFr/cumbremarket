@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80"
+          src="/hero.jpg"
           alt="Montañas chilenas"
           className="w-full h-full object-cover object-center"
         />

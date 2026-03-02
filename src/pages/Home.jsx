@@ -19,7 +19,7 @@ export default function Home() {
       title: "Cumbre Market | Compra y Vende Equipo de Montaña en Chile",
       description: "El marketplace N°1 de Chile para equipo de montaña usado. Compra y vende mochilas, carpas, zapatos y equipo de escalada de forma segura y sustentable.",
       canonicalPath: "/",
-      ogImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69690f2a2acef97513bc2b6e/5e873849b_20260116_233348.png",
+      ogImage: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
       structuredData: {
         "@context": "https://schema.org",
         "@type": "WebSite",

@@ -75,7 +75,7 @@ export default function ProductDetail() {
       const cat = categoryLabels[product.category] || 'Equipo outdoor';
       const brandPart = product.brand ? `${product.brand} ` : '';
       const description = `Compra ${brandPart}${product.title} en Chile. Condición: ${conditionLabels[product.condition]}. Ideal para ${cat.toLowerCase()}. Equipo de montaña usado verificado por la comunidad.`;
-      const imageUrl = product.images?.[0] || "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69690f2a2acef97513bc2b6e/89a1e2f73_CM.png";
+      const imageUrl = product.images?.[0] || "";
       
       setSEO({
         title: `${brandPart}${product.title} | ${cat} usado - Cumbre Market`,

@@ -45,7 +45,7 @@ export default function Layout({ children, currentPageName }) {
 
         // Set favicon and app icons
         useEffect(() => {
-          const iconUrl = "/logo.png";
+          const iconUrl = "/logo-dark.png";
 
           const setLink = (rel, href) => {
             let link = document.querySelector(`link[rel="${rel}"]`);
@@ -84,7 +84,7 @@ export default function Layout({ children, currentPageName }) {
             {/* Logo */}
             <Link to={createPageUrl("Home")} className="flex items-center gap-3">
               <img 
-                src="/logo.png" onError={(e)=>{e.target.style.display="none"}} 
+                src="/logo-dark.png" onError={(e)=>{e.target.style.display="none"}} 
                 alt="Cumbre Market Logo" 
                 className={`h-12 w-auto transition-all duration-300 ${isTransparent ? 'brightness-0 invert drop-shadow-md' : ''}`}
               />
@@ -252,7 +252,7 @@ export default function Layout({ children, currentPageName }) {
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-white/20 backdrop-blur-sm w-14 h-14 flex items-center justify-center rounded-md">
                   <img 
-                    src="/logo.png" onError={(e)=>{e.target.style.display="none"}} 
+                    src="/logo-dark.png" onError={(e)=>{e.target.style.display="none"}} 
                     alt="Cumbre Market Logo" 
                     className="h-8 w-auto brightness-0 invert"
                   />

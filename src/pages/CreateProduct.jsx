@@ -116,7 +116,7 @@ export default function CreateProduct() {
               Necesitas una cuenta para publicar equipos en Cumbre Market
             </p>
             <Button 
-              onClick={() => auth.redirectToLogin(window.location.href)}
+              onClick={() => window.location.href = '/Login'}
               className="w-full bg-emerald-700 hover:bg-emerald-800"
             >
               Iniciar sesión

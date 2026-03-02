@@ -80,7 +80,7 @@ export default function MyProducts() {
 
   const { data: products, isLoading } = useQuery({
     queryKey: ['my-products', user?.email],
-    queryFn: () => Product.filter({ created_by: user.email }, '-created_date'),
+    queryFn: () => Product.filter({ seller_id: user.id }, '-created_at'),
     enabled: !!user,
     initialData: [],
   });
@@ -123,7 +123,7 @@ export default function MyProducts() {
               Necesitas una cuenta para ver tus publicaciones
             </p>
             <Button 
-              onClick={() => auth.redirectToLogin(window.location.href)}
+              onClick={() => window.location.href = '/Login'}
               className="w-full bg-emerald-700 hover:bg-emerald-800"
             >
               Iniciar sesión

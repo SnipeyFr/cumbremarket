@@ -120,7 +120,7 @@ export default function Profile() {
               Necesitas una cuenta para ver tu perfil
             </p>
             <Button 
-              onClick={() => auth.redirectToLogin(window.location.href)}
+              onClick={() => window.location.href = '/Login'}
               className="w-full bg-emerald-700 hover:bg-emerald-800"
             >
               Iniciar sesión

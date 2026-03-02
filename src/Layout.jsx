@@ -143,7 +143,7 @@ export default function Layout({ children, currentPageName }) {
                   </div>
                 ) : (
                   <Button 
-                    onClick={() => auth.redirectToLogin()}
+                    onClick={() => window.location.href = '/Login'}
                     variant={isTransparent ? "outline" : "default"}
                     className={isTransparent ? 'bg-transparent border-white text-white hover:bg-white/10' : 'bg-emerald-700 hover:bg-emerald-800'}
                   >
@@ -225,7 +225,7 @@ export default function Layout({ children, currentPageName }) {
                       </div>
                     ) : (
                       <Button 
-                        onClick={() => auth.redirectToLogin()}
+                        onClick={() => window.location.href = '/Login'}
                         className="w-full bg-emerald-700 hover:bg-emerald-800"
                       >
                         Iniciar sesión
